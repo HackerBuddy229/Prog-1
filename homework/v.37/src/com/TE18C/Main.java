@@ -8,9 +8,11 @@ public class Main {
 	// write your code here
 
     Human human = getInput();
-    
+
 
     }
+
+
     String name;
     int age;
     String adress;
@@ -34,6 +36,9 @@ public class Main {
 
         return new Human(name, age, adress, postalCode, city, phoneNumber);
     }
+
+
+
 }
 
 
@@ -76,5 +81,27 @@ class Human {
 
     public int getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public void present() {
+        System.out.println("Information");
+        System.out.println("Namn:   " + getName());
+        System.out.println("Ålder:  " + getAge() + "år");
+        System.out.println("Adress: " + getAdress());
+        System.out.println(getFormattedPostalCode() + " " + getCity());
+        System.out.println("Telefon " + getPhoneNumber());
+    }
+
+    public String getFormattedPostalCode(){
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append(getPostalCode());
+        sb2.substring(2);
+        StringBuilder sb = new StringBuilder();
+        sb.append(getPostalCode());
+        sb.substring(0, 3);
+        sb.append(" ");
+        sb.append(sb2.toString());
+        return sb.toString();
+
     }
 }
