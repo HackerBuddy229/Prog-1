@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
 	// write your code here
 
-
+    Human human = getInput();
+    
 
     }
     String name;
