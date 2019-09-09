@@ -86,7 +86,7 @@ class Human {
     public void present() {
         System.out.println("Information");
         System.out.println("Namn:   " + getName());
-        System.out.println("Ålder:  " + getAge() + "år");
+        System.out.println("Ålder:  " + getAge() + " år");
         System.out.println("Adress: " + getAdress());
         System.out.println(getFormattedPostalCode() + " " + getCity());
         System.out.println("Telefon: " + getPhoneNumber());
