@@ -20,16 +20,18 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("Name?");
         name = input.nextLine();
-        System.out.println("");
+        System.out.println("Age?");
+        age = Integer.parseInt(input.nextLine());
+        System.out.println("adress?");
+        adress = input.nextLine();
+        System.out.println("postal code: 000000?");
+        postalCode = Integer.parseInt(input.nextLine());
+        System.out.println("City?");
+        city = input.nextLine();
+        System.out.println("Phone Number?");
+        phoneNumber = Integer.parseInt(input.nextLine());
 
-        System.out.println("");
-
-        System.out.println("");
-
-        System.out.println("");
-
-        System.out.println("");
-
+        return new Human(name, age, adress, postalCode, city, phoneNumber);
     }
 }
 
