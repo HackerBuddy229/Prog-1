@@ -93,15 +93,9 @@ class Human {
     }
 
     public String getFormattedPostalCode(){
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append(getPostalCode());
-        sb2.substring(2);
-        StringBuilder sb = new StringBuilder();
-        sb.append(getPostalCode());
-        sb.substring(0, 3);
-        sb.append(" ");
-        sb.append(sb2.toString());
-        return sb.toString();
-
+      String x = Integer.toString(getPostalCode());
+      x = x.substring(0, 3);
+      x = x + " " + Integer.toString(getPostalCode()).substring(3);
+      return x;
     }
 }
