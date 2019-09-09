@@ -1,10 +1,34 @@
 package com.TE18C;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-    
+
+
+
+    }
+    String name;
+    int age;
+    String adress;
+    int postalCode;
+    String city;
+    int phoneNumber;
+    private Human getInput(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Name?");
+        name = input.nextLine();
+        System.out.println("");
+
+        System.out.println("");
+
+        System.out.println("");
+
+        System.out.println("");
+
+        System.out.println("");
 
     }
 }
