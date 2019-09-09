@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Main {
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
 	// write your code here
-
-    Human human = getInput();
-
+Main myMainClass = new Main();
+    Human human = myMainClass.getInput();
+    human.present();
 
     }
 
@@ -19,7 +19,7 @@ public class Main {
     int postalCode;
     String city;
     int phoneNumber;
-    private Human getInput(){
+    public Human getInput(){
         Scanner input = new Scanner(System.in);
         System.out.println("Name?");
         name = input.nextLine();
@@ -89,7 +89,7 @@ class Human {
         System.out.println("Ålder:  " + getAge() + "år");
         System.out.println("Adress: " + getAdress());
         System.out.println(getFormattedPostalCode() + " " + getCity());
-        System.out.println("Telefon " + getPhoneNumber());
+        System.out.println("Telefon: " + getPhoneNumber());
     }
 
     public String getFormattedPostalCode(){
