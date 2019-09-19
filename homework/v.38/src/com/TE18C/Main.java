@@ -1,5 +1,6 @@
 package com.TE18C;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -10,7 +11,18 @@ public class Main {
         String input = GetInput();
         String[] parsedInput = ParseInput(input);
         //DebugPring(parsedInput);
+        ArrayList<Integer> IntegerInput = ConvertToInt(parsedInput);
+    }
 
+    private static ArrayList<Integer> ConvertToInt(String[] parsedInput) {
+        ArrayList<Integer> IntegerInput = new ArrayList<>(parsedInput.length);
+
+        for (String x: parsedInput
+             ) {
+            IntegerInput.add(Integer.parseInt(x));
+
+        }
+        return IntegerInput;
     }
 
     private static void DebugPring(String[] parsedInput) {
