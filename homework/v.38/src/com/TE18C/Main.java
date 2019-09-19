@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 public class Main {
 
+
+
+
     public static void main(String[] args) {
 	// write your code here
 
@@ -12,6 +15,50 @@ public class Main {
         String[] parsedInput = ParseInput(input);
         //DebugPring(parsedInput);
         ArrayList<Integer> IntegerInput = ConvertToInt(parsedInput);
+
+        int min = SetMin(IntegerInput);
+        int max = SetMax(IntegerInput);
+        float avg = SetAvg(IntegerInput);
+    }
+
+    private static float SetAvg(ArrayList<Integer> integerInput) {
+        int total = 0;
+        for (int num:integerInput
+             ) {
+
+                total = total + num;
+
+        }
+        return total/integerInput.size();
+
+
+    }
+
+    private static int SetMax(ArrayList<Integer> integerInput) {
+        int max = 0;
+        for (int num:integerInput
+             ) {
+
+            if (num > max) {
+                max = num;
+            }
+
+        }
+        return max;
+    }
+
+    private static int SetMin(ArrayList<Integer> integerInput) {
+        int min = 0;
+        for (int num:integerInput
+             ) {
+
+            if (num < min) {
+                min = num;
+            }
+
+
+        }
+        return min;
     }
 
     private static ArrayList<Integer> ConvertToInt(String[] parsedInput) {
