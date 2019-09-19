@@ -3,13 +3,25 @@ package com.TE18C;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class Methods {
+    /**
+     *
+     * @param min
+     * @param max
+     * @param avg
+     */
     protected static void Display(int min, int max, double avg) {
         System.out.println("Högst: " + max);
         System.out.println("Lägst: " + min);
         System.out.println("medelvärde: " + avg);
     }
 
+    /**
+     *
+     * @param integerInput
+     * @return
+     */
     protected static double SetAvg(ArrayList<Integer> integerInput) {
         int total = 0;
         for (int num:integerInput
@@ -24,6 +36,11 @@ public class Methods {
 
     }
 
+    /**
+     *
+     * @param integerInput
+     * @return
+     */
     protected static int SetMax(ArrayList<Integer> integerInput) {
         int max = 0;
         for (int num:integerInput
@@ -37,6 +54,11 @@ public class Methods {
         return max;
     }
 
+    /**
+     *
+     * @param integerInput
+     * @return
+     */
     protected static int SetMin(ArrayList<Integer> integerInput) {
         int min = integerInput.get(0);
         for (int num:integerInput
@@ -51,6 +73,11 @@ public class Methods {
         return min;
     }
 
+    /**
+     *
+     * @param parsedInput
+     * @return
+     */
     protected static ArrayList<Integer> ConvertToInt(String[] parsedInput) {
         ArrayList<Integer> IntegerInput = new ArrayList<>(parsedInput.length);
 
@@ -62,6 +89,10 @@ public class Methods {
         return IntegerInput;
     }
 
+    /**
+     *
+     * @param parsedInput
+     */
     private static void DebugPring(String[] parsedInput) {
         for (String x:parsedInput
              ) {
@@ -69,10 +100,19 @@ public class Methods {
         }
     }
 
+    /**
+     *
+     * @param input
+     * @return
+     */
     protected static String[] ParseInput(String input) {
         return input.split(" ");
     }
 
+    /**
+     *
+     * @return
+     */
     protected static String GetInput() {
         System.out.print("Skriv in 10 heltal: ");
         Scanner sc = new Scanner(System.in);
