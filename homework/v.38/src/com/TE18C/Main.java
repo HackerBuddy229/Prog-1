@@ -19,6 +19,13 @@ public class Main {
         int min = SetMin(IntegerInput);
         int max = SetMax(IntegerInput);
         float avg = SetAvg(IntegerInput);
+        Display(min, max, avg);
+    }
+
+    private static void Display(int min, int max, float avg) {
+        System.out.println("Högst: " + max);
+        System.out.println("Lägst: " + min);
+        System.out.println("medelvärde" + avg);
     }
 
     private static float SetAvg(ArrayList<Integer> integerInput) {
@@ -48,7 +55,7 @@ public class Main {
     }
 
     private static int SetMin(ArrayList<Integer> integerInput) {
-        int min = 0;
+        int min = integerInput.get(0);
         for (int num:integerInput
              ) {
 
