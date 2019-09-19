@@ -18,17 +18,17 @@ public class Main {
 
         int min = SetMin(IntegerInput);
         int max = SetMax(IntegerInput);
-        float avg = SetAvg(IntegerInput);
+        double avg = SetAvg(IntegerInput);
         Display(min, max, avg);
     }
 
-    private static void Display(int min, int max, float avg) {
+    private static void Display(int min, int max, double avg) {
         System.out.println("Högst: " + max);
         System.out.println("Lägst: " + min);
-        System.out.println("medelvärde" + avg);
+        System.out.println("medelvärde: " + avg);
     }
 
-    private static float SetAvg(ArrayList<Integer> integerInput) {
+    private static double SetAvg(ArrayList<Integer> integerInput) {
         int total = 0;
         for (int num:integerInput
              ) {
@@ -36,7 +36,8 @@ public class Main {
                 total = total + num;
 
         }
-        return total/integerInput.size();
+        double i = (double)total / integerInput.size();
+        return i;
 
 
     }
