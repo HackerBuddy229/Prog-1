@@ -9,7 +9,15 @@ public class Main {
 
         String input = GetInput();
         String[] parsedInput = ParseInput(input);
+        //DebugPring(parsedInput);
 
+    }
+
+    private static void DebugPring(String[] parsedInput) {
+        for (String x:parsedInput
+             ) {
+            System.out.println(x);
+        }
     }
 
     private static String[] ParseInput(String input) {
