@@ -93,7 +93,7 @@ public class Methods {
      *Prints out the content of an array of strings for debug purposes
      * @param parsedInput an array of strings
      */
-    private static void DebugPring(String[] parsedInput) {
+    static void DebugPring(String[] parsedInput) {
         for (String x:parsedInput
              ) {
             System.out.println(x);
