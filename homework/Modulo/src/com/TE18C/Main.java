@@ -18,6 +18,7 @@ public class Main {
                 u.add(x%42);
             }
         }
+
         System.out.println(u.size());
     }
 }
