@@ -33,5 +33,16 @@ public class Methods{
         }
     }
 
+    /**
+     * converts celcius to kelvin
+     * @param _celcius takes a double
+     * @return returns double as kelving
+     */
+    private static double kelvin(double _celcius){
+        return _celcius + 273.15;
+    }
+
+
+
 
 }
