@@ -23,5 +23,15 @@ public class Methods{
         }
     }
 
+    /**
+     * Prints 1->_times
+     * @param _times to where to count(integer)
+     */
+    private static void count(int _times){
+        for (int current = 1; 1<=_times; current++){
+            System.out.println(current);
+        }
+    }
+
 
 }
