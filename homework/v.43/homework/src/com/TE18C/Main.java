@@ -11,18 +11,18 @@ public class Main {
     }
 
     /**
-     *
-     * @param _radius
-     * @return
+     *  takes the radius of a sphere and returns the volume
+     * @param _radius radius double
+     * @return volume double
      */
     private static double volume(double _radius){
         return (4*Math.PI * Math.pow(_radius, 3))/3;
     }
 
     /**
-     *
-     * @param _str
-     * @return
+     * Accepts a string as parameter and returns the string reversed
+     * @param _str origin string
+     * @return reversed _Str
      */
     private static String reverse(String _str){
         ArrayList<Character> res = new ArrayList<Character>();
@@ -39,5 +39,24 @@ public class Main {
             res.add(_str.substring(i-1).charAt(0));
         }
         return res.toString();
+    }
+
+    /**
+     *
+     * @param _str
+     * @param _c
+     * @return
+     */
+    private static int count(String _str, String _c){
+        int count = 0;
+        int lastSeen = 0;
+        while(true){
+            lastSeen = _str.indexOf(_c, lastSeen);
+            if (lastSeen != -1){
+                count++;
+
+            } else {break;}
+        }
+        return count;
     }
 }
