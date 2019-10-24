@@ -5,7 +5,7 @@ public class Methods{
     /**
      * Prints the text "HAHAHAHAHAHAHA."
      */
-    private static void lol(){
+    public static void lol(){
         System.out.println("HAHAHAHAHAHAHA.");
     }
 
@@ -15,7 +15,7 @@ public class Methods{
      * @param _numTwo second integer
      * @return smallest integer
      */
-    private static int min(int _numOne, int _numTwo){
+    public static int min(int _numOne, int _numTwo){
         if (_numOne < _numTwo) {
             return _numOne;
         } else {
@@ -27,8 +27,8 @@ public class Methods{
      * Prints 1->_times
      * @param _times to where to count(integer)
      */
-    private static void count(int _times){
-        for (int current = 1; 1<=_times; current++){
+    public static void count(int _times){
+        for (int current = 1; current <= _times; current++){
             System.out.println(current);
         }
     }
@@ -38,7 +38,7 @@ public class Methods{
      * @param _celcius takes a double
      * @return returns double as kelving
      */
-    private static double kelvin(double _celcius){
+    public static double kelvin(double _celcius){
 
         return _celcius + 273.15;
     }
@@ -47,7 +47,7 @@ public class Methods{
      * prints text coresponding to varius age groups.
      * @param _age integer representing age
      */
-    private static void ageControll(int _age){
+    public static void ageControll(int _age){
         if (_age >= 0 && _age <= 5){
             System.out.println("Småbarn får inte göra något.");
         } else if(_age <= 12){
@@ -71,13 +71,14 @@ public class Methods{
      * Prints a fligth of stairs consisting of "#"
      * @param steps amount of layers integer
      */
-    private static void stairs(int steps){
+    public static void stairs(int steps){
         String stair = "#";
-        for (int flights = 0; flights == steps; flights++){
-            System.out.println(stair);
-            for (int i = 0; i == flights; i++){
+        for (int flights = 0; flights < steps; ++flights){
+            //System.out.println(stair);
+            for (int i = 0; i <= flights; i++){
                 System.out.print(stair);
             }
+            //System.out.println();
         }
 
     }
