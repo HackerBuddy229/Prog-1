@@ -43,6 +43,10 @@ public class Methods{
         return _celcius + 273.15;
     }
 
+    /**
+     * prints text coresponding to varius age groups.
+     * @param _age integer representing age
+     */
     private static void ageControll(int _age){
         if (_age >= 0 && _age <= 5){
             System.out.println("Småbarn får inte göra något.");
@@ -61,6 +65,21 @@ public class Methods{
         } else {
             System.out.println("R.I.P?");
         }
+    }
+
+    /**
+     * Prints a fligth of stairs consisting of "#"
+     * @param steps amount of layers integer
+     */
+    private static void stairs(int steps){
+        String stair = "#";
+        for (int flights = 0; flights == steps; flights++){
+            System.out.println(stair);
+            for (int i = 0; i == flights; i++){
+                System.out.print(stair);
+            }
+        }
+
     }
 
 
