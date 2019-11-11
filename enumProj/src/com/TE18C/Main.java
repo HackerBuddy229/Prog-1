@@ -13,8 +13,14 @@ public class Main {
     }
 
 
-
-
+    /**
+     * Converts _fahrenheit to celsius which is returned as a double.
+     * @param _fahrenheit the temperature to be converted to Celcius.
+     * @return returns the aforementioned temperature in celsius.
+     */
+    public static double fahrenheitToCelsius(double _fahrenheit){
+        return (_fahrenheit - 32) * (5/9); // subtracts 32 and multiplies by 5/9
+    }
 
 
 }
