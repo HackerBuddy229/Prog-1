@@ -40,4 +40,13 @@ public class Main {
     public static double fluidPressure(FluidTable _fluid, double _deep){
         return _fluid.density*_deep*g_swe; // density * acceleration * depth
     }
+
+    /**
+     * Uses local acceleration, water density and depth to calculate the fluid pressure under water
+     * @param _deep the depth at which to calculate
+     * @return returns the Fluid pressure.
+     */
+    public static double pressureUnderWater(double _deep){
+        return FluidTable.WATER.density*_deep*g_swe; // water density * acceleration * depth
+    }
 }
