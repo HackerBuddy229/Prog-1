@@ -49,4 +49,14 @@ public class Main {
     public static double pressureUnderWater(double _deep){
         return FluidTable.WATER.density*_deep*g_swe; // water density * acceleration * depth
     }
+
+    /**
+     * Calculate kinetic energy with mass and velocity.
+     * @param _mass the mass of the object in question
+     * @param _velocity the velocity of the object in question
+     * @return returns the kinetic energy.
+     */
+    public static double kineticEnergy(double _mass, double _velocity){
+        return (_mass*Math.pow(_velocity, 2))/2; // multiplies _mass with _velocity to the power of 2 and divides by 2
+    }
 }
