@@ -59,4 +59,17 @@ public class Main {
     public static double kineticEnergy(double _mass, double _velocity){
         return (_mass*Math.pow(_velocity, 2))/2; // multiplies _mass with _velocity to the power of 2 and divides by 2
     }
+
+    /**
+     * calculates potential energy of an object by the mass and height of the object
+     * @param _mass the mass of the object
+     * @param _height the height of the object
+     * @return the potential energy in joules
+     */
+    public static double potentialEnergy(double _mass, double _height) {
+        return _mass * g_swe * _height; // the mass parameter multiplied with the gravitational acceleration in
+                                        // sweden then multiplied with the height parameter
+    }
+
+
 }
