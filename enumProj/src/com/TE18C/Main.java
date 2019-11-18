@@ -111,4 +111,18 @@ public class Main {
     }
 
 
+    /**
+     * returns the mass of the volume of solids
+     * @param _solid the aforementioned gas
+     * @param _volume the volume provided
+     * @return returns the total mass
+     */
+    public static double volumeToMass(SolidTable _solid, double _volume){
+        return _solid.density * _volume; // the density of the solid provided times the volume provided
+    }
+
+
+
+
+
 }
