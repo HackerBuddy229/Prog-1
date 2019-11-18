@@ -71,5 +71,14 @@ public class Main {
                                         // sweden then multiplied with the height parameter
     }
 
+    /**
+     * returns the fall speed depending on height
+     * @param _height the height of the object dropped
+     * @return the fall speed at impact
+     */
+    public static double fallSpeed(double _height) {
+        return Math.pow((2*_height)/g_swe, 1/2) * g_swe; // (((2*s)/2)¹/2) * g
+    }
+
 
 }
