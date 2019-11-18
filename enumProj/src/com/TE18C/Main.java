@@ -93,11 +93,21 @@ public class Main {
     /**
      * returns the mass of the volume of liquid
      * @param _fluid the aforementioned fluid
-     * @param _volume
-     * @return
+     * @param _volume the volume provided
+     * @return returns the total mass
      */
     public static double volumeToMass(FluidTable _fluid, double _volume){
         return _fluid.density * _volume; // the density of the fluid provided times the volume provided
+    }
+
+    /**
+     * returns the mass of the volume of gas
+     * @param _gas the aforementioned gas
+     * @param _volume the volume provided
+     * @return returns the total mass
+     */
+    public static double volumeToMass(GasTable _gas, double _volume){
+        return _gas.density * _volume; // the density of the gas provided times the volume provided
     }
 
 
