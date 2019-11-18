@@ -80,5 +80,15 @@ public class Main {
         return Math.pow((2*_height)/g_swe, 1/2) * g_swe; // (((2*s)/2)¹/2) * g
     }
 
+    /**
+     * returns the difference between the two values
+     * @param _first value 1
+     * @param _last value 2
+     * @return Delta
+     */
+    public static double delta(double _first, double _last){
+        return _last - _first; // last value subtracted by the first value
+    }
+
 
 }
