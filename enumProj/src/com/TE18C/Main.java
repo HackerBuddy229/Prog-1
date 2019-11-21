@@ -141,6 +141,16 @@ public class Main {
         return _velocity * _time;//velocity times time.
     }
 
+    /**
+     * returns the time traveled by the distance and velocity
+     * @param _distance the distance traveled
+     * @param _velocity the velocity traveled at
+     * @return the time it took
+     */
+    public static double svtTime(double _distance, double _velocity){
+        return _distance / _velocity; //distance divided by velocity
+    }
+
 
 
 
