@@ -161,6 +161,16 @@ public class Main {
         return _force * _distance; // the force times the distance
     }
 
+    /**
+     * returns the power consumption by the work and the time
+     * @param _work the work performed
+     * @param _time the time it was performed under
+     * @return the power consumption
+     */
+    public static double power(double _work, double _time){
+        return _work/_time;//the work divided by the time
+    }
+
 
 
 
