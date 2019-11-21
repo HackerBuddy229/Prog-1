@@ -151,6 +151,16 @@ public class Main {
         return _distance / _velocity; //distance divided by velocity
     }
 
+    /**
+     * returns the work
+     * @param _force the force used
+     * @param _distance the distance covered
+     * @return the work
+     */
+    public static double work(double _force, double _distance){
+        return _force * _distance; // the force times the distance
+    }
+
 
 
 
