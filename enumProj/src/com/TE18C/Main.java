@@ -171,6 +171,42 @@ public class Main {
         return _work/_time;//the work divided by the time
     }
 
+    /**
+     * returns the energy needed to heat a material by the mass, the heat capacity and the delta temp
+     * @param _solid the solid in question
+     * @param _mass the mass of the metal
+     * @param _deltaT the difference in temperature
+     * @return the energy needed
+     */
+    public static double heat(SolidTable _solid, double _mass, double _deltaT){
+        return _solid.heatCapacity*_mass*_deltaT;//heat capacity times the mass times the difference in temperature.
+    }
+
+
+    /**
+     * returns the energy needed to heat a fluid by the mass, the heat capacity and the delta temp
+     * @param _fluid the fluid in question
+     * @param _mass the mass of the metal
+     * @param _deltaT the difference in temperature
+     * @return the energy needed
+     */
+    public static double heat(FluidTable _fluid, double _mass, double _deltaT){
+        return _fluid.heatCapacity*_mass*_deltaT;//heat capacity times the mass times the difference in temperature.
+    }
+
+
+
+    /**
+     * returns the energy needed to heat a gas by the mass, the heat capacity and the delta temp
+     * @param _gas the gas in question
+     * @param _mass the mass of the metal
+     * @param _deltaT the difference in temperature
+     * @return the energy needed
+     */
+    public static double heat(GasTable _gas, double _mass, double _deltaT){
+        return _gas.heatCapacity*_mass*_deltaT;//heat capacity times the mass times the difference in temperature.
+    }
+
 
 
 
