@@ -121,6 +121,18 @@ public class Main {
         return _solid.density * _volume; // the density of the solid provided times the volume provided
     }
 
+    /**
+     * returns the average speed of an object by the distance and the time
+     * @param _distance the distance the object traveled
+     * @param _time the time it did it in
+     * @return the average speed
+     */
+    public static double svtVelocity(double _distance, double _time){
+        return _distance/_time; // the distance divided by the time
+    }
+
+
+
 
 
 
