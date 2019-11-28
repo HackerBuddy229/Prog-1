@@ -26,6 +26,7 @@ public class Main {
         System.out.println(fluidPressure(FluidTable.WATER, 75));
         System.out.println("---");
         System.out.println("bollen når:");
+        System.out.println(velocityToHeight(kmHourToMeterSeconds(60)));
 
 
         System.out.println();
@@ -227,9 +228,9 @@ public class Main {
     }
 
     /**
-     *
-     * @param _velocity
-     * @return
+     * returns the height an object achieves by the initial velocity
+     * @param _velocity the initial velocity
+     * @return the height achieved
      */
     public static double velocityToHeight(double _velocity){
         double t = _velocity/((-1)*g_swe);
@@ -238,6 +239,17 @@ public class Main {
         return result;                                              //velocity times travel time plus acceleration times
                                                                     // time to the power of two divided by two
     }
+
+    /**
+     * calculates meters per second from km per hour using km per hour
+     * @param _kmHour the speed in km per hour
+     * @return the speed in meters per second
+     */
+    public static double kmHourToMeterSeconds(double _kmHour){
+        return _kmHour/3.6;
+    }
+
+
 
     
 
