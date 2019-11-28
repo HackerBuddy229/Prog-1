@@ -12,6 +12,25 @@ public class Main {
 	// write your code here
     }
 
+    private static void SolveQuestions(){
+        System.out.println("60 liters of iron weights:");
+        System.out.println(volumeToMass(SolidTable.IRON, 60/0.001));
+        System.out.println("---");
+        System.out.println("Tomas hinner:");
+        System.out.println(svtDistance(2.7, 50*60));
+        System.out.println("---");
+        System.out.println("Det tar");
+        System.out.println(heat(FluidTable.WATER, volumeToMass(FluidTable.WATER, 4/0.001), 100-22));
+        System.out.println("--");
+        System.out.println("Det är:");
+        System.out.println(fluidPressure(FluidTable.WATER, 75));
+        System.out.println("---");
+        System.out.println("bollen når:");
+
+
+        System.out.println();
+    }
+
 
     /**
      * Converts _fahrenheit to celsius which is returned as a double.
@@ -203,9 +222,24 @@ public class Main {
      * @param _deltaT the difference in temperature
      * @return the energy needed
      */
-    public static double heat(GasTable _gas, double _mass, double _deltaT){
-        return _gas.heatCapacity*_mass*_deltaT;//heat capacity times the mass times the difference in temperature.
+    public static double heat(GasTable _gas, double _mass, double _deltaT) {
+        return _gas.heatCapacity * _mass * _deltaT;//heat capacity times the mass times the difference in temperature.
     }
+
+    /**
+     *
+     * @param _velocity
+     * @return
+     */
+    public static double velocityToHeight(double _velocity){
+        double t = _velocity/((-1)*g_swe);
+        double a = (-1)*g_swe;
+        double result = (_velocity*t)+((a*Math.pow(t, 2))/(2));
+        return result;                                              //velocity times travel time plus acceleration times
+                                                                    // time to the power of two divided by two
+    }
+
+    
 
 
 
