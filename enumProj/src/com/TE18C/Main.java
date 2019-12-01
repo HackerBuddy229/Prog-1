@@ -302,6 +302,16 @@ public class Main {
     public static double averageSpeed(double _deltaDistance, double _deltaTime){
         return _deltaDistance/_deltaTime;
     }
+
+    /**
+     * returns the impulse by the force and diffrence in time
+     * @param _force the force applied
+     * @param _DeltaTime the diffrence in time
+     * @return the impuls
+     */
+    public static double impulse(double _force, double _DeltaTime){
+        return _force*_DeltaTime;
+    }
     
 
 
