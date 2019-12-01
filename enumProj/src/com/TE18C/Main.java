@@ -45,8 +45,25 @@ public class Main {
 
         }
         System.out.println("---");
+        System.out.println("what is 55 fahrenheit in Celsius:");
+        System.out.println(fahrenheitToCelsius(55));
+        System.out.println("---");
+        System.out.println("what is the difference between 55 and 87");
+        System.out.println(delta(55, 87));
+        System.out.println("---");
+        System.out.println("How much work i performed by lifting a 1kg heavy object one meter in the air");
+        System.out.println(work(gravitationalForce(1), 1));
 
 
+    }
+
+    /**
+     * returns the gravitational force exerted by the mass of the object
+     * @param _mass the mass of the object
+     * @return the force exerted
+     */
+    private static double gravitationalForce(double _mass) {
+        return g_swe*_mass; // g times the mass of the object
     }
 
     /**
