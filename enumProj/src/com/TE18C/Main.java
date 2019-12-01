@@ -358,6 +358,16 @@ public class Main {
         return ((Math.PI*Math.pow(_radius, 2)*_height)/3)*_solid.density;
     }
 
+    /**
+     * returns the work required
+     * @param _mass the mass of the object
+     * @param _height the height of the object
+     * @return the work required
+     */
+    public static double workByHeight(double _mass, double _height){
+        return _mass * _height * g_swe;
+    }
+
 
 
 
