@@ -10,9 +10,10 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        solveQuestions();
     }
 
-    private static void SolveQuestions(){
+    private static void solveQuestions(){
         System.out.println("60 liters of iron weights:");
         System.out.println(volumeToMass(SolidTable.IRON, 60/0.001));
         System.out.println("---");
@@ -342,8 +343,22 @@ public class Main {
      * @return the mass of the pyramid
      */
     public static double pyramidMass(SolidTable _solid, double _side, double _height){
-        return ((_side*_side)*_height)/3;
+        return (((_side*_side)*_height)/3)*_solid.density;
     }
+
+
+    /**
+     * returns the mass of a Cone of a solid
+     * @param _solid the solid the cone consists of
+     * @param _radius the radius of the cone
+     * @param _height the height of the cone
+     * @return the mass of the cone
+     */
+    public static double coneMass(SolidTable _solid, double _radius, double _height){
+        return ((Math.PI*Math.pow(_radius, 2)*_height)/3)*_solid.density;
+    }
+
+
 
 
     
