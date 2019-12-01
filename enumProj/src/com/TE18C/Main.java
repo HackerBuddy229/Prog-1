@@ -312,6 +312,17 @@ public class Main {
     public static double impulse(double _force, double _DeltaTime){
         return _force*_DeltaTime;
     }
+
+    /**
+     * returns the mass of a cylinder of a metal
+     * @param _solid the solid that the cylinder consists of
+     * @param _radius the radius of the cylinder
+     * @param _height the hieght of the cylinder
+     * @return the mass of the cylinder
+     */
+    public static double CylinderMass(SolidTable _solid, double _radius, double _height){
+        return ((Math.PI*Math.pow(_radius, 2)*_height)/3)*_solid.density;
+    }
     
 
 
