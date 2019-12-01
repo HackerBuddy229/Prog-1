@@ -27,9 +27,36 @@ public class Main {
         System.out.println("---");
         System.out.println("bollen når:");
         System.out.println(velocityToHeight(kmHourToMeterSeconds(60)));
+        System.out.println("---");
+        System.out.println("Effekten är:");
+        System.out.println(kineticEnergy(735, 100/3.6)/4.8);
+        System.out.println("---");
+        System.out.println("Den Studsar:");
+        int bounceNumber = 0;
+        double energyRemaining = potentialEnergy(1, 12);
+        while (true){
+            energyRemaining = energyRemaining * 0.99;
+
+            if (energyToHeight(1, energyRemaining) < 5){
+                System.out.println(bounceNumber);
+                break;
+            }
+            bounceNumber++;
+
+        }
+        System.out.println("---");
 
 
-        System.out.println();
+    }
+
+    /**
+     * returns the height an object is at or can reach by the mass and total energy
+     * @param _mass the mass of the object
+     * @param _energy the total energy of the object
+     * @return the height achieved
+     */
+    private static double energyToHeight(double _mass, double _energy) {
+        return (_energy/g_swe)/_mass; // energy divided by g divided by the mass
     }
 
 
