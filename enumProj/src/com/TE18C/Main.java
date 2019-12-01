@@ -330,9 +330,22 @@ public class Main {
      * @param _radius the radius of the globe
      * @return the mass of the globe
      */
-    public static double GlobeMass(SolidTable _solid, double _radius){
+    public static double globeMass(SolidTable _solid, double _radius){
         return ((Math.PI*Math.pow(_radius, 4)*4)/3)*_solid.density;
     }
+
+    /**
+     * returns the mass of a pyramid of a solid
+     * @param _solid the solid the pyramid consists of
+     * @param _side the length of the base of the pyramid
+     * @param _height the height of the pyramid
+     * @return the mass of the pyramid
+     */
+    public static double pyramidMass(SolidTable _solid, double _side, double _height){
+        return ((_side*_side)*_height)/3;
+    }
+
+
     
 
 
