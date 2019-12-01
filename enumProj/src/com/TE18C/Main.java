@@ -323,6 +323,16 @@ public class Main {
     public static double CylinderMass(SolidTable _solid, double _radius, double _height){
         return ((Math.PI*Math.pow(_radius, 2)*_height)/3)*_solid.density;
     }
+
+    /**
+     * returns the mass of a globe of a metal
+     * @param _solid the solid that the globe consists of
+     * @param _radius the radius of the globe
+     * @return the mass of the globe
+     */
+    public static double GlobeMass(SolidTable _solid, double _radius){
+        return ((Math.PI*Math.pow(_radius, 4)*4)/3)*_solid.density;
+    }
     
 
 
