@@ -293,8 +293,15 @@ public class Main {
         return _kmHour/3.6;
     }
 
-
-
+    /**
+     * returns the average speed by the diffrence in distance and time
+     * @param _deltaDistance the diffrence in distance
+     * @param _deltaTime the diffrence in time
+     * @return the average speed
+     */
+    public static double averageSpeed(double _deltaDistance, double _deltaTime){
+        return _deltaDistance/_deltaTime;
+    }
     
 
 
