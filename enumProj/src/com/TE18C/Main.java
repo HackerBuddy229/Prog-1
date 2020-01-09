@@ -1,7 +1,7 @@
 package com.TE18C;
 
 public class Main {
-
+ //test kommentar... fuck java c# is the gre23atest!
     public static final double G = 0.00000000006674;
     public static final double R = 8.3145;
     public static final int p_0 = 1013;
