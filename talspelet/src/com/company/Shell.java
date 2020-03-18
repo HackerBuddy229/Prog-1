@@ -1,7 +1,10 @@
 package com.company;
 
+import com.company.Data.Leaderboard;
 import com.company.Services.*;
+import com.company.Services.LeaderBoardService;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Shell {
@@ -9,12 +12,13 @@ public class Shell {
     private Scanner scanner;
     private boolean run;
     private AboutService about;
+    private LeaderBoardService leaderboard;
 
     public Shell() {
         this.scanner = new Scanner(System.in);
         this.run = true;
         this.about = new AboutService();
-
+        this.leaderboard = new LeaderBoardService();
     }
 
     /**
@@ -51,11 +55,33 @@ public class Shell {
     private void interpret(String[] input){
         switch (input[0]){
             case "About":
-                    about.printAbout(input);
+                about.printAbout(input);
                 break;
             case "Leaderboard":
+                leaderboard(input);
+                break;
+        }
+    }
+
+    private void leaderboard(String[] arg) {
+        switch (arg[1]){
+            case "Reset":
+                try {
+                    leaderboard.resetLeaderboard();
+                } catch (IOException e) {
+                    System.out.println(e);
+                }
 
                 break;
+            case "Show":
+                try {
+                    leaderboard.displayLeaderboard();
+                } catch (IOException e){
+                    System.out.println(e);
+                }
+
+                break;
+            default:
         }
     }
 
