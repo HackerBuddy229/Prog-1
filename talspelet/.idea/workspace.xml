@@ -1,11 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e8eef8a-dba2-475d-a66e-300a67ee7644" name="Default Changelist" comment="" />
+    <list default="true" id="7e8eef8a-dba2-475d-a66e-300a67ee7644" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Services/AboutService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/Leaderboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/Leaderboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/LeaderboardItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/LeaderboardItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Services/LeaderBoardService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Shell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Shell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Data/Leaderboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Data/Leaderboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Data/LeaderboardItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Data/LeaderboardItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Services/AboutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Services/AboutService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Services/LeaderBoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Services/LeaderBoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Shell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Shell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/talspelet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/talspelet.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/gradle">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gradle" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -18,6 +57,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1ZJZYaNHovfyUThVvoVIyOdQhL1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,11 +73,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+      <command value="gradle build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="talspelet" />
@@ -41,8 +95,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="gradle [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.gradle [build]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.gradle [build]" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -57,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584559205109</updated>
-      <workItem from="1584559207808" duration="2061000" />
+      <workItem from="1584559207808" duration="8102000" />
     </task>
     <servers />
   </component>
@@ -65,25 +143,45 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1874" height="281" key="GridCell.Tab.0.bottom" timestamp="1584560988335">
+    <state x="769" y="271" key="#com.intellij.ide.util.MemberChooser" timestamp="1584563715448">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="1874" height="281" key="GridCell.Tab.0.bottom/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584560988335" />
-    <state width="1874" height="281" key="GridCell.Tab.0.center" timestamp="1584560988335">
+    <state x="769" y="271" key="#com.intellij.ide.util.MemberChooser/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584563715448" />
+    <state x="744" y="310" key="FileChooserDialogImpl" timestamp="1584562504369">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="1874" height="281" key="GridCell.Tab.0.center/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584560988335" />
-    <state width="1874" height="281" key="GridCell.Tab.0.left" timestamp="1584560988335">
+    <state x="744" y="310" key="FileChooserDialogImpl/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584562504369" />
+    <state width="1874" height="281" key="GridCell.Tab.0.bottom" timestamp="1584565231438">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="1874" height="281" key="GridCell.Tab.0.left/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584560988335" />
-    <state width="1874" height="281" key="GridCell.Tab.0.right" timestamp="1584560988335">
+    <state width="1874" height="281" key="GridCell.Tab.0.bottom/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584565231438" />
+    <state width="1874" height="281" key="GridCell.Tab.0.center" timestamp="1584565231438">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="1874" height="281" key="GridCell.Tab.0.right/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584560988335" />
-    <state x="457" y="187" key="SettingsEditor" timestamp="1584559939189">
+    <state width="1874" height="281" key="GridCell.Tab.0.center/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584565231438" />
+    <state width="1874" height="281" key="GridCell.Tab.0.left" timestamp="1584565231438">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state x="457" y="187" key="SettingsEditor/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584559939189" />
+    <state width="1874" height="281" key="GridCell.Tab.0.left/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584565231438" />
+    <state width="1874" height="281" key="GridCell.Tab.0.right" timestamp="1584565231438">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="1874" height="281" key="GridCell.Tab.0.right/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584565231438" />
+    <state x="457" y="187" key="SettingsEditor" timestamp="1584562484247">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="457" y="187" key="SettingsEditor/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584562484247" />
+    <state x="336" y="153" key="new project wizard" timestamp="1584565174639">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="336" y="153" key="new project wizard/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584565174639" />
+    <state x="620" y="253" width="672" height="677" key="run.anything.popup" timestamp="1584565222210">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="620" y="253" width="672" height="677" key="run.anything.popup/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584565222210" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1584562730460">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584562730460" />
   </component>
 </project>

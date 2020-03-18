@@ -1,15 +1,19 @@
 package com.company;
 
+import com.company.Services.*;
+
 import java.util.Scanner;
 
 public class Shell {
 
     private Scanner scanner;
     private boolean run;
+    private AboutService about;
 
     public Shell() {
         this.scanner = new Scanner(System.in);
         this.run = true;
+        this.about = new AboutService();
 
     }
 
@@ -21,9 +25,11 @@ public class Shell {
         while (run){
 
             input = acceptInput();
-            if (input == null)  {
+            if (input == null || input[0] == "")  {
                 continue;
             }
+            interpret(input);
+
 
 
         }
@@ -39,15 +45,20 @@ public class Shell {
         return input.split(" ");
     }
 
+    /**
+     * @param input The input from the user consisting of index 0 main argument, index 1 and greater other arguments
+     */
     private void interpret(String[] input){
         switch (input[0]){
             case "About":
-
+                    about.printAbout(input);
                 break;
-            case "":
+            case "Leaderboard":
 
                 break;
         }
     }
+
+
 
 }
