@@ -6,6 +6,8 @@
       <change beforePath="$PROJECT_DIR$/gradle/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Shell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Shell.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Data/Difficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Data/Difficulty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Data/GameStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Data/GameStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Data/LeaderboardItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Data/LeaderboardItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Shell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Shell.java" afterDir="false" />
     </list>
@@ -128,7 +130,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584559205109</updated>
-      <workItem from="1584559207808" duration="9568000" />
+      <workItem from="1584559207808" duration="11002000" />
     </task>
     <servers />
   </component>
@@ -136,10 +138,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="769" y="271" key="#com.intellij.ide.util.MemberChooser" timestamp="1584568773899">
+    <state x="769" y="271" key="#com.intellij.ide.util.MemberChooser" timestamp="1584569858013">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state x="769" y="271" key="#com.intellij.ide.util.MemberChooser/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584568773899" />
+    <state x="769" y="271" key="#com.intellij.ide.util.MemberChooser/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584569858013" />
     <state x="744" y="310" key="FileChooserDialogImpl" timestamp="1584562504369">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
