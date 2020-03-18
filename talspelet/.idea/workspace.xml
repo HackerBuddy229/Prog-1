@@ -41,6 +41,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584559205109</updated>
-      <workItem from="1584559207808" duration="1717000" />
+      <workItem from="1584559207808" duration="2061000" />
     </task>
     <servers />
   </component>
@@ -60,6 +65,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1874" height="281" key="GridCell.Tab.0.bottom" timestamp="1584560988335">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="1874" height="281" key="GridCell.Tab.0.bottom/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584560988335" />
+    <state width="1874" height="281" key="GridCell.Tab.0.center" timestamp="1584560988335">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="1874" height="281" key="GridCell.Tab.0.center/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584560988335" />
+    <state width="1874" height="281" key="GridCell.Tab.0.left" timestamp="1584560988335">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="1874" height="281" key="GridCell.Tab.0.left/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584560988335" />
+    <state width="1874" height="281" key="GridCell.Tab.0.right" timestamp="1584560988335">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="1874" height="281" key="GridCell.Tab.0.right/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584560988335" />
     <state x="457" y="187" key="SettingsEditor" timestamp="1584559939189">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>

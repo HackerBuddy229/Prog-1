@@ -34,9 +34,20 @@ public class Shell {
      */
     private String[] acceptInput() {
         String input = null;
-        System.out.println("#");
+        System.out.print("#");
         input = scanner.nextLine();
         return input.split(" ");
+    }
+
+    private void interpret(String[] input){
+        switch (input[0]){
+            case "About":
+
+                break;
+            case "":
+
+                break;
+        }
     }
 
 }
