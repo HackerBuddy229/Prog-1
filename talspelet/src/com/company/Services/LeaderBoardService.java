@@ -5,7 +5,6 @@ import com.company.Data.Leaderboard;
 import com.company.Data.LeaderboardItem;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import
 
 
 
@@ -65,6 +64,11 @@ public class LeaderBoardService {
         Leaderboard leaderboard = new Leaderboard();
         saveLeaderboard(leaderboard);
     }
+
+    public void displayLeaderboard() throws IOException {
+        System.out.println(fetchLeaderboard().toString());
+    }
+
 
 
 }

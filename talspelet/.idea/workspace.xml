@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Services/AboutService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/Leaderboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/Leaderboard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/LeaderboardItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/LeaderboardItem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Services/LeaderBoardService.class" beforeDir="false" />
@@ -135,7 +136,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584559205109</updated>
-      <workItem from="1584559207808" duration="8102000" />
+      <workItem from="1584559207808" duration="8206000" />
     </task>
     <servers />
   </component>
