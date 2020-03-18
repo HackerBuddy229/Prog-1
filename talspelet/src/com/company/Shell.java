@@ -60,6 +60,9 @@ public class Shell {
             case "Leaderboard":
                 leaderboard(input);
                 break;
+            case "Run":
+
+                break;
         }
     }
 
@@ -83,6 +86,10 @@ public class Shell {
                 break;
             default:
         }
+    }
+
+    private void run(String[] args){
+
     }
 
 
