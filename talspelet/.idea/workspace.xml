@@ -28,6 +28,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -57,5 +58,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="457" y="187" key="SettingsEditor" timestamp="1584559939189">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="457" y="187" key="SettingsEditor/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584559939189" />
   </component>
 </project>
