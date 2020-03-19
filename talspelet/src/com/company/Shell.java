@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.Data.Difficulty;
 import com.company.Data.Leaderboard;
 import com.company.Services.*;
 import com.company.Services.LeaderBoardService;
@@ -32,6 +33,9 @@ public class Shell {
             if (input == null || input[0] == "")  {
                 continue;
             }
+            if (input[0].equals("Exit")){
+                break;
+            }
             interpret(input);
 
 
@@ -53,6 +57,17 @@ public class Shell {
      * @param input The input from the user consisting of index 0 main argument, index 1 and greater other arguments
      */
     private void interpret(String[] input){
+        try{
+            String test = input[1];
+
+        } catch (ArrayIndexOutOfBoundsException e){
+            String temp = input[0];
+            input = new String[]{
+                    temp,
+                    ""
+            };
+        }
+
         switch (input[0]){
             case "About":
                 about.printAbout(input);
@@ -61,35 +76,47 @@ public class Shell {
                 leaderboard(input);
                 break;
             case "Run":
-
+                run(input);
                 break;
         }
     }
 
     private void leaderboard(String[] arg) {
-        switch (arg[1]){
-            case "Reset":
-                try {
-                    leaderboard.resetLeaderboard();
-                } catch (IOException e) {
-                    System.out.println(e);
-                }
 
-                break;
-            case "Show":
-                try {
-                    leaderboard.displayLeaderboard();
-                } catch (IOException e){
-                    System.out.println(e);
-                }
+            switch (arg[1]) {
+                case "Reset":
+                    try {
+                        leaderboard.resetLeaderboard();
+                    } catch (IOException e) {
+                        System.out.println(e);
+                    }
 
-                break;
-            default:
-        }
+                    break;
+                case "Show":
+                    try {
+                        leaderboard.displayLeaderboard();
+                    } catch (IOException e) {
+                        System.out.println(e);
+                    }
+
+                    break;
+                default:
+            }
+
     }
 
     private void run(String[] args){
 
+        switch (args[1]){
+            case "Medium":
+                new Game(Difficulty.Medium, scanner).Begin();
+                break;
+            case "DEATHWISH":
+                new Game(Difficulty.DEATHWISH, scanner).Begin();
+                break;
+            default:
+                new Game(Difficulty.Easy, scanner).Begin();
+        }
     }
 
 

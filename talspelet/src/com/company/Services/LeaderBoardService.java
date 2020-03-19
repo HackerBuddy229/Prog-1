@@ -7,11 +7,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 
 public class LeaderBoardService {
@@ -24,17 +20,17 @@ public class LeaderBoardService {
 
 
     private Leaderboard fetchLeaderboard() throws IOException {
-        byte[] content;
 
-        FileInputStream fileInputStream = new FileInputStream(filename);
-        content = fileInputStream.readAllBytes();
-        if (content == null) {
-            return null;
+        String content = "";
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(new File(filename)));
+        String line;
+        while((line = bufferedReader.readLine()) != null){
+            content += line;
         }
 
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = new Gson();
-        Leaderboard leaderboard = gson.fromJson(content.toString(), Leaderboard.class);
+        Leaderboard leaderboard = gson.fromJson(content, Leaderboard.class);
 
         return leaderboard;
     }

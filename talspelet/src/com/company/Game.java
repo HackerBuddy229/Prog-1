@@ -12,10 +12,12 @@ public class Game {
     private Scanner scanner;
     private LeaderBoardService leaderBoardService;
 
-    public Game(Difficulty difficulty, GameStats gameStats, Scanner scanner) {
+    public Game(Difficulty difficulty, Scanner scanner) {
 
         this.difficulty = difficulty;
-        this.gameStats = new GameStats(new Random().nextInt(difficulty.range));
+        Random random = new Random();
+        int correctNum = random.nextInt(difficulty.range);
+        this.gameStats = new GameStats(correctNum);
         this.scanner = scanner;
         this.leaderBoardService = new LeaderBoardService();
 
@@ -24,7 +26,7 @@ public class Game {
 
     public void Begin(){
         if (difficulty != null && gameStats != null) {
-
+            gameloop();
         }
     }
 

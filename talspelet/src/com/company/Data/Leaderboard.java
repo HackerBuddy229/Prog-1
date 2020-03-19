@@ -6,6 +6,10 @@ public class Leaderboard {
 
     public ArrayList<LeaderboardItem> leaderboard;
 
+    public Leaderboard() {
+        leaderboard = new ArrayList<LeaderboardItem>();
+    }
+
     public ArrayList<LeaderboardItem> getLeaderboard() {
         return leaderboard;
     }

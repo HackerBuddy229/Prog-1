@@ -9,7 +9,7 @@ public class GameStats {
 
     public GameStats(int correctNumber) {
         guesses = new ArrayList<Integer>();
-        correctNumber = correctNumber;
+        this.correctNumber = correctNumber;
 
     }
 }
