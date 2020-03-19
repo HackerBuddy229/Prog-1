@@ -62,7 +62,13 @@ public class LeaderBoardService {
     }
 
     public void displayLeaderboard() throws IOException {
-        System.out.println(fetchLeaderboard().toString());
+        Leaderboard leaderboard = fetchLeaderboard();
+
+        for (LeaderboardItem leaderboardItem :
+                leaderboard.leaderboard) {
+            System.out.print(leaderboardItem.name);
+            System.out.println("  " + leaderboardItem.score);
+        }
     }
 
 

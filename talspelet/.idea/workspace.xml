@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e8eef8a-dba2-475d-a66e-300a67ee7644" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/GameStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/GameStats.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/Leaderboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Data/Leaderboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leaderboard.json" beforeDir="false" afterPath="$PROJECT_DIR$/Leaderboard.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Services/LeaderBoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Services/LeaderBoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/talspelet/com/company/Shell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/talspelet/com/company/Shell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Data/GameStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Data/GameStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Data/Leaderboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Data/Leaderboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Services/AboutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Services/AboutService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Services/LeaderBoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Services/LeaderBoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Shell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Shell.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584559205109</updated>
       <workItem from="1584559207808" duration="12785000" />
-      <workItem from="1584603561189" duration="1556000" />
+      <workItem from="1584603561189" duration="5438000" />
     </task>
     <servers />
   </component>
@@ -155,22 +150,22 @@
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
     <state x="744" y="310" key="FileChooserDialogImpl/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584562504369" />
-    <state width="1874" height="347" key="GridCell.Tab.0.bottom" timestamp="1584605044607">
+    <state width="1874" height="281" key="GridCell.Tab.0.bottom" timestamp="1584608155263">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="1874" height="347" key="GridCell.Tab.0.bottom/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584605044607" />
-    <state width="1874" height="347" key="GridCell.Tab.0.center" timestamp="1584605044607">
+    <state width="1874" height="281" key="GridCell.Tab.0.bottom/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584608155263" />
+    <state width="1874" height="281" key="GridCell.Tab.0.center" timestamp="1584608155263">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="1874" height="347" key="GridCell.Tab.0.center/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584605044607" />
-    <state width="1874" height="347" key="GridCell.Tab.0.left" timestamp="1584605044606">
+    <state width="1874" height="281" key="GridCell.Tab.0.center/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584608155263" />
+    <state width="1874" height="281" key="GridCell.Tab.0.left" timestamp="1584608155263">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="1874" height="347" key="GridCell.Tab.0.left/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584605044606" />
-    <state width="1874" height="347" key="GridCell.Tab.0.right" timestamp="1584605044607">
+    <state width="1874" height="281" key="GridCell.Tab.0.left/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584608155263" />
+    <state width="1874" height="281" key="GridCell.Tab.0.right" timestamp="1584608155263">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="1874" height="347" key="GridCell.Tab.0.right/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584605044607" />
+    <state width="1874" height="281" key="GridCell.Tab.0.right/0.22.1920.1058/1920.0.1920.1080@0.22.1920.1058" timestamp="1584608155263" />
     <state width="1874" height="347" key="GridCell.Tab.1.bottom" timestamp="1584605044608">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>

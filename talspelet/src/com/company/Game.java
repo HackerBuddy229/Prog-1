@@ -61,6 +61,19 @@ public class Game {
 
 
         }
+
+        PresentGameStats();
+    }
+
+    private void PresentGameStats() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int guess: gameStats.guesses) {
+            stringBuilder.append(guess);
+            stringBuilder.append(", ");
+        }
+        System.out.println("You guessed " + gameStats.guesses.size() + " Times");
+        System.out.println("Your guesses where:");
+        System.out.println(stringBuilder.toString());
     }
 
     private void presentClue(int guess) {
