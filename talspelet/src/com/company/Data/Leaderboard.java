@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Leaderboard {
 
-    public ArrayList<LeaderboardItem> leaderboard;
+    public ArrayList<LeaderboardItem> leaderboard; // an array list containing all entry's to the leaderboard
 
     public Leaderboard() {
         leaderboard = new ArrayList<LeaderboardItem>();

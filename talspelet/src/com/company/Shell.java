@@ -81,6 +81,10 @@ public class Shell {
         }
     }
 
+    /**
+     * Sorts varius requests aimed for the leaderboard command
+     * @param arg the user input from acceptInput()
+     */
     private void leaderboard(String[] arg) {
 
             switch (arg[1]) {
@@ -105,6 +109,10 @@ public class Shell {
 
     }
 
+    /**
+     * Sorts varius requests aimed for the run command
+     * @param args the user input from acceptInput()
+     */
     private void run(String[] args){
 
         switch (args[1]){

@@ -17,6 +17,10 @@ public class AboutService {
     public AboutService() {
     }
 
+    /**
+     * handles various requests for the About command
+     * @param input the user input from Shell.acceptInput()
+     */
     public void printAbout(String[] input) {
         switch (input[1]) {
 

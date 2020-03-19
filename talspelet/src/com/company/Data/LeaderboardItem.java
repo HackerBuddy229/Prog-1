@@ -2,9 +2,9 @@ package com.company.Data;
 
 public class LeaderboardItem {
 
-    public String name;
+    public String name; //name of the scorer
 
-    public int score;
+    public int score; // the score achieved
 
     public LeaderboardItem(String name, int score) {
         this.name = name;

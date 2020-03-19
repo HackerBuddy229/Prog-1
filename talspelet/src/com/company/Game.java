@@ -24,12 +24,24 @@ public class Game {
     }
 
 
+    /**
+     * Checks correct init and launches the game loop
+     */
     public void Begin(){
         if (difficulty != null && gameStats != null) {
             gameloop();
         }
     }
 
+    /**
+     * GameLoop consisting of
+     * for difficult.#ofAtemptsAllowed
+     * take input
+     * add to gameStats
+     * check win
+     * handle leaderboard
+     * present clue
+     */
     private void gameloop(){
         for (int index = 0; index < difficulty.numOfGuesses; index++){
             System.out.println("Please guess a number");
@@ -47,10 +59,11 @@ public class Game {
                 System.out.println("You have won!");
                 System.out.println("what is your name?");
                 try {
-                    leaderBoardService.addLeaderboardItem(new LeaderboardItem(scanner.nextLine(), gameStats.guesses.size()));
+                    leaderBoardService.addLeaderboardItem(new LeaderboardItem(scanner.nextLine(), gameStats.guesses.size())); //Add score to leaderboard
                     leaderBoardService.displayLeaderboard();
                 } catch (IOException e) {
-                    scanner.nextLine();
+
+                    System.out.println("Leaderboard failed");
                 }
 
                 break;
@@ -65,6 +78,9 @@ public class Game {
         PresentGameStats();
     }
 
+    /**
+     * Presents the instantiated class GameStats
+     */
     private void PresentGameStats() {
         StringBuilder stringBuilder = new StringBuilder();
         for (int guess: gameStats.guesses) {
@@ -76,6 +92,10 @@ public class Game {
         System.out.println(stringBuilder.toString());
     }
 
+    /**
+     *
+     * @param guess the guess for which to calculate the clue
+     */
     private void presentClue(int guess) {
         if (gameStats.correctNumber < guess){
             System.out.println("you have guessed to big a number");
